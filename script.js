@@ -3,6 +3,9 @@ const size = document.querySelector('#size');
 const button = document.querySelector('#btn');
 const colorFromInput = document.querySelector('#input');
 const colorBtn = document.querySelector('#color-btn');
+const cleanBtn = document.querySelector('#clear-btn')
+const numberOfCells = document.querySelector('#number-cells')
+const createBtn = document.querySelector('#set-cell')
 let trigger = false;
 let number = 16;
 
@@ -46,6 +49,14 @@ colorBtn.addEventListener('click', ()=>{
     }
 })
 
+cleanBtn.addEventListener('click', ()=>{
+        container.innerHTML = '';
+})
+
+createBtn.addEventListener('click', ()=>{
+    container.innerHTML = '';
+    createGrid(numberOfCells.value);
+})
+
 
 createGrid(16);
-
