@@ -1,0 +1,37 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.col {
+    border: 1px solid black;
+    background-color: #fafafa;
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
